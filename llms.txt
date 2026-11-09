@@ -1,0 +1,28 @@
+# Universal Quantum Work
+
+One source-independent sequence of exact thermal operations attains the full relative-entropy work rate for every fixed unknown iid source with finite D(rho||tau), a known discrete Hamiltonian, and a finite Gibbs partition function. The central physical case is every finite-energy harmonic-oscillator state, without a supplied energy bound or tail envelope.
+
+## Reader routes
+
+- Overview and physical question: README.md, science/README.md.
+- Exact assumptions, quantifiers, and battery conventions: science/model_theorem.md.
+- The thermal replacement channel and its relative-entropy limit: science/thermal_cutoff.md.
+- The uniform finite-dimensional extractor and explicit Gibbs-only dilation: science/finite_extraction.md.
+- Training, target grids, finite output alphabet, and source-independent stage schedule: science/universal_protocol.md.
+- Optimal reliable work rate and initial battery accounting: science/converse.md.
+- Exact-label impossibility, residual entropy bound, and sharpness qualifications: science/output_boundary.md.
+- Coherence, slow tails, and the absence of a uniform mean-energy-class sample guarantee: science/oscillator.md.
+- Inherited ingredients and comparison with primary literature: references/related_work.md, references/source_register.md, references/bibliography.bib.
+- Reproduction commands, finite checks, and their limits: verification/README.md, verification/check_protocol.py.
+
+## Essential distinctions
+
+The all-n guarantee is convergence of work density in mean absolute deviation, hence also in probability and mean. The exact-energy-label guarantee uses a source-dependent favorable subsequence and the ordered lim_epsilon->0 limsup_n criterion. Do not replace it by exact-label concentration along every n.
+
+At each n the battery is diagonal with a finite alphabet. Two coarse-grid energies carry nearly all probability, and the total entropy is at most ln(2)+o(1). These need not be neighboring oscillator levels. The entropy lower bound is a residual-source limsup statement on a continuous commuting family, not an all-source or almost-everywhere entropy tax.
+
+The finite-dimensional ingredient is uniform in the source at fixed dimension and margin. Recovery of the original relative entropy is pointwise in the infinite-dimensional source. A mean-energy bound alone does not give a uniform finite-sample guarantee.
+
+The processor counts all training specimens, starts a single fixed oscillator battery at its ground level, and uses only Gibbs-initialized auxiliary systems. It supplies no catalyst, free pure memory, phase reference, or work loan. Bath size, energy, control complexity, and running time are unrestricted and can grow rapidly.
+
+Keep the public account scientific. Each theorem and proof has an authoritative topic page; navigation and summaries should preserve its assumptions and limiting order.
