@@ -51,7 +51,7 @@ The review develops thermal operations in Section I.C and treats a two-level wor
 | Object | Review's setting | This project's setting |
 |---|---|---|
 | Equilibrium state | $`\gamma_S`$ | $`\tau`$ |
-| Resource relative to equilibrium | Nonequilibrium free energy | $`f(\rho)=D(\rho\|\tau)/\beta`$ |
+| Resource relative to equilibrium | Nonequilibrium free energy | $`f(\rho)=D(\rho\Vert\tau)/\beta`$ |
 | Work storage | A work bit whose excited level has energy $`W`$ | One fixed oscillator; a target is $`W=k\Delta`$ |
 | Input description | A specified state transformation | One unknown fixed source, supplied as independent copies |
 | Number of source levels | Finite-dimensional default | Countably many levels with a finite partition function |
