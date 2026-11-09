@@ -22,10 +22,10 @@ The pinned environment uses NumPy 2.3.5 and Matplotlib 3.10.8. The script writes
 | Gibbs preservation and nesting | Verify that compression maps the source Gibbs state to the normalized truncated Gibbs state and that an intermediate cutoff gives the same final channel. |
 | Relative entropy | Compute the retained relative entropy at each finite cutoff and check monotonicity for the four example states. |
 | Exact position decoder | Construct the full two-position decoder with a maximally mixed position bit. For an excited source and bath excitation probability one third, the position register's ground population is five sixths, above the unique-acceptance lower bound of two thirds. A Gibbs source leaves the register maximally mixed. |
-| Battery charging | Construct the charging permutation with a three-state degenerate register and a bath of degeneracies one and three. At inverse temperature $\ln2$ and unit work gap, a pure register yields charging probability three fifths. Mixed-register cases reproduce equation (F44). |
+| Battery charging | Construct the charging permutation with a three-state degenerate register and a bath of degeneracies one and three. At inverse temperature $`\ln2`$ and unit work gap, a pure register yields charging probability three fifths. Mixed-register cases reproduce equation (F44). |
 | Coherence illustration | Generate the compressed state of the pure geometric superposition with thermal populations. Its free-energy curve increases to approximately 1.04065 for unit inverse temperature and gap; the dephased Gibbs source has zero relative entropy at every cutoff. |
 
-Matrix residuals and differences are required to be below $2\times10^{-12}$. The curve check uses a finite-cutoff tolerance appropriate to its nonzero analytical tail. Floating-point values can differ slightly between linear-algebra implementations.
+Matrix residuals and differences are required to be below $`2\times10^{-12}`$. The curve check uses a finite-cutoff tolerance appropriate to its nonzero analytical tail. Floating-point values can differ slightly between linear-algebra implementations.
 
 ## What requires the proofs
 

@@ -24,7 +24,7 @@ The proof has two distinct limiting statements. At a fixed cutoff, error bounds 
 
 The battery is one fixed oscillator initialized at its ground level. Every batch uses a finite energy alphabet, and its output is diagonal. At most two nearby coarse-grid energies carry all but a vanishing probability. Their separation divided by the number of source copies tends to zero, so both represent the same asymptotic work density.
 
-The total battery entropy is at most $\ln2+o(1)$, including the contribution of rare outputs. A pair of shifted work grids also ensures one sharp exact label in at least one member of each late pair of batch sizes. This is enough for the exact-label criterion with a limsup over batch size.
+The total battery entropy is at most $`\ln2+o(1)`$, including the contribution of rare outputs. A pair of shifted work grids also ensures one sharp exact label in at least one member of each late pair of batch sizes. This is enough for the exact-label criterion with a limsup over batch size.
 
 These statements cannot be replaced by an assertion of a sharp exact label at every large batch size for every unknown source. The [boundary proof](output_boundary.md) establishes that obstruction already for a commuting two-level family. Its residual-set entropy conclusion is a statement about Baire category and subsequences, with no general probability or typical-source interpretation.
 

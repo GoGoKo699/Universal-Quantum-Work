@@ -8,13 +8,13 @@ The single educational anchor is Matteo Lostaglio, **“An introductory review o
 
 The review supplies the resource-theoretic setting, population transformations, work storage, and coherence constraints. The canonical [science pages](../science/README.md) supply the finite-sample constructions, unbounded-source analysis, universal schedule, and output boundary. A pointer to the review gives the relevant conceptual foundation; it does not attribute the project's additional proof to the review. Primary research dependencies remain identified in the scientific pages.
 
-Throughout the map, $H$ is the source Hamiltonian, $\beta>0$ is inverse temperature, $\tau=e^{-\beta H}/Z_\beta$ is its Gibbs state, and
+Throughout the map, $`H`$ is the source Hamiltonian, $`\beta>0`$ is inverse temperature, $`\tau=e^{-\beta H}/Z_\beta`$ is its Gibbs state, and
 
-$$
+```math
 f(\rho)=\frac{1}{\beta}D(\rho\Vert\tau)
-$$
+```
 
-is the proposed work rate. The battery has fixed levels $k\Delta$, starts in its ground state, and has output energy $X_n$ after consuming $n$ source copies. Entropies use natural logarithms, so $\ln 2$ is one bit of entropy.
+is the proposed work rate. The battery has fixed levels $`k\Delta`$, starts in its ground state, and has output energy $`X_n`$ after consuming $`n`$ source copies. Entropies use natural logarithms, so $`\ln 2`$ is one bit of entropy.
 
 ## Allocation and dependency structure
 
@@ -81,7 +81,7 @@ Dependencies identify the earlier milestones needed for a conceptual step. The n
 
 **Central question:** Which uncertainty does quantum entropy measure, and how does it differ from uncertainty in an energy measurement?
 
-**Understanding target:** Interpret $S(\rho)=-\operatorname{Tr}\rho\ln\rho$ through the state's eigenvalues. Distinguish pure-state entropy from the entropy of measured energy populations, and recognize why a mixed battery output requires more description than its mean energy.
+**Understanding target:** Interpret $`S(\rho)=-\operatorname{Tr}\rho\ln\rho`$ through the state's eigenvalues. Distinguish pure-state entropy from the entropy of measured energy populations, and recognize why a mixed battery output requires more description than its mean energy.
 
 **Dependencies and story role:** M01. Entropy connects local state information to the later accounting of free energy and work quality.
 
@@ -151,7 +151,7 @@ Dependencies identify the earlier milestones needed for a conceptual step. The n
 
 **Central question:** Why does relative entropy to the Gibbs state set the thermodynamic work scale?
 
-**Understanding target:** Connect $D(\rho\Vert\tau)/\beta$ to the free-energy excess when energy and entropy are finite. Understand why relative entropy remains the primary definition when separate energy and entropy terms could both diverge.
+**Understanding target:** Connect $`D(\rho\Vert\tau)/\beta`$ to the free-energy excess when energy and entropy are finite. Understand why relative entropy remains the primary definition when separate energy and entropy terms could both diverge.
 
 **Dependencies and story role:** M02, M03, and M06. This joins the source description to the rate the battery is supposed to attain.
 
@@ -179,7 +179,7 @@ Dependencies identify the earlier milestones needed for a conceptual step. The n
 
 **Central question:** How can a protocol use coherent sources without an external phase reference?
 
-**Understanding target:** Connect thermal operations with time-translation covariance. Distinguish dephasing an entire $n$-copy source at its total energy from independently dephasing each copy: the former retains coherence inside degenerate total-energy sectors, including $|01\rangle\langle10|$.
+**Understanding target:** Connect thermal operations with time-translation covariance. Distinguish dephasing an entire $`n`$-copy source at its total energy from independently dephasing each copy: the former retains coherence inside degenerate total-energy sectors, including $`|01\rangle\langle10|`$.
 
 **Dependencies and story role:** M01 and M05. This resolves the symmetry constraint before introducing collective measurements and extraction.
 
@@ -249,7 +249,7 @@ Dependencies identify the earlier milestones needed for a conceptual step. The n
 
 **Central question:** What complete work-extraction capability is available before treating an unbounded, unknown source?
 
-**Understanding target:** Integrate the threshold test, register purification, and finite-bath sector swap. State the resulting promise: one operation charges the ground-start ladder to $\Delta\lfloor\ell r/\Delta\rfloor$ with vanishing error uniformly over finite-dimensional states satisfying $f\ge r+s$, with output supported on ground and target levels.
+**Understanding target:** Integrate the threshold test, register purification, and finite-bath sector swap. State the resulting promise: one operation charges the ground-start ladder to $`\Delta\lfloor\ell r/\Delta\rfloor`$ with vanishing error uniformly over finite-dimensional states satisfying $`f\ge r+s`$, with output supported on ground and target levels.
 
 **Dependencies and story role:** M06, M12, and M13. This is the background capstone and the construction's inherited interface.
 
@@ -279,7 +279,7 @@ Dependencies identify the earlier milestones needed for a conceptual step. The n
 
 **Central question:** How can every source copy enter a finite-dimensional protocol without conditioning on a rare collective event?
 
-**Understanding target:** Understand the channel $\Phi_K(\rho)=\Pi_K\rho\Pi_K+\operatorname{Tr}(Q_K\rho)\tau_K$, where $\Pi_K$ projects onto the first $K$ energy eigenvectors and $Q_K=I-\Pi_K$. Follow its conditional-swap implementation, identify the retained ancilla, and explain why low-energy coherence survives while tail information is discarded without postselection.
+**Understanding target:** Understand the channel $`\Phi_K(\rho)=\Pi_K\rho\Pi_K+\operatorname{Tr}(Q_K\rho)\tau_K`$, where $`\Pi_K`$ projects onto the first $`K`$ energy eigenvectors and $`Q_K=I-\Pi_K`$. Follow its conditional-swap implementation, identify the retained ancilla, and explain why low-energy coherence survives while tail information is discarded without postselection.
 
 **Dependencies and story role:** M05 and M15. This supplies the exact physical reduction on which the remaining construction rests.
 
@@ -293,7 +293,7 @@ Dependencies identify the earlier milestones needed for a conceptual step. The n
 
 **Central question:** Why does replacing a tail by thermal noise eventually preserve the entire free-energy rate?
 
-**Understanding target:** Connect Gibbs preservation, nested cutoff channels, trace-norm convergence, and lower semicontinuity. Explain why $D(\Phi_K(\rho)\Vert\tau_K)$ increases to $D(\rho\Vert\tau)$ even without a quantitative convergence rate or separate finite energy and entropy assumptions.
+**Understanding target:** Connect Gibbs preservation, nested cutoff channels, trace-norm convergence, and lower semicontinuity. Explain why $`D(\Phi_K(\rho)\Vert\tau_K)`$ increases to $`D(\rho\Vert\tau)`$ even without a quantitative convergence rate or separate finite energy and entropy assumptions.
 
 **Dependencies and story role:** M07, M08, and M16. This converts the physical cutoff into a mathematically sufficient approximation.
 
@@ -307,7 +307,7 @@ Dependencies identify the earlier milestones needed for a conceptual step. The n
 
 **Central question:** What must a universal extractor learn about its unknown input before choosing a work target?
 
-**Understanding target:** Explain why estimating the scalar cutoff free energy is sufficient. Follow the use of $m_n=\lfloor\sqrt n\rfloor$ training copies, joint energy and Schur labels, clipping to the known finite range, and a state-uniform estimation error bound at fixed cutoff.
+**Understanding target:** Explain why estimating the scalar cutoff free energy is sufficient. Follow the use of $`m_n=\lfloor\sqrt n\rfloor`$ training copies, joint energy and Schur labels, clipping to the known finite range, and a state-uniform estimation error bound at fixed cutoff.
 
 **Dependencies and story role:** M10, M11, and M17. This supplies target information while consuming a vanishing fraction of the available source.
 
@@ -321,7 +321,7 @@ Dependencies identify the earlier milestones needed for a conceptual step. The n
 
 **Central question:** How can an imperfect free-energy estimate select a work value that the extraction engine can safely supply?
 
-**Understanding target:** Relate grid width $a_K$, estimation tolerance $s_K$, and the conservative target $r=\max\{0,b-4s_K\}$. Explain the resulting extraction margin, oscillator-level rounding, and finite output alphabet. An accurate estimate can reach at most two neighboring coarse bins.
+**Understanding target:** Relate grid width $`a_K`$, estimation tolerance $`s_K`$, and the conservative target $`r=\max\{0,b-4s_K\}`$. Explain the resulting extraction margin, oscillator-level rounding, and finite output alphabet. An accurate estimate can reach at most two neighboring coarse bins.
 
 **Dependencies and story role:** M12, M14, and M18. This connects statistical information to an implementable battery command.
 
@@ -349,7 +349,7 @@ Dependencies identify the earlier milestones needed for a conceptual step. The n
 
 **Central question:** How can one deterministic schedule serve every source when its tail convergence rate is unknown?
 
-**Understanding target:** Separate state-uniform error bounds at fixed $K$ from pointwise convergence as $K$ increases. Explain how even stage thresholds $N_K$ control extraction error, training loss, rounding, and the finite-alphabet entropy contribution while keeping $K(n)$ constant on adjacent even-odd pairs.
+**Understanding target:** Separate state-uniform error bounds at fixed $`K`$ from pointwise convergence as $`K`$ increases. Explain how even stage thresholds $`N_K`$ control extraction error, training loss, rounding, and the finite-alphabet entropy contribution while keeping $`K(n)`$ constant on adjacent even-odd pairs.
 
 **Dependencies and story role:** M14, M17, M19, and M20. This integrates the local constructions into a common source-independent sequence.
 
@@ -363,7 +363,7 @@ Dependencies identify the earlier milestones needed for a conceptual step. The n
 
 **Central question:** How do the cutoff, training, and extraction errors combine into the full work-rate guarantee?
 
-**Understanding target:** Follow the bound on $\mathbb E|X_n/n-f(\rho)|$. Separate the source-dependent cutoff loss from grid, training, rounding, and failure contributions. Explain why their convergence gives both probability concentration and convergence of mean work along every sufficiently large integer block length.
+**Understanding target:** Follow the bound on $`\mathbb E|X_n/n-f(\rho)|`$. Separate the source-dependent cutoff loss from grid, training, rounding, and failure contributions. Explain why their convergence gives both probability concentration and convergence of mean work along every sufficiently large integer block length.
 
 **Dependencies and story role:** M17 and M21. This is the principal achievability statement obtained from the assembled protocol.
 
@@ -377,7 +377,7 @@ Dependencies identify the earlier milestones needed for a conceptual step. The n
 
 **Central question:** Why can a universal extractor have a sharply concentrated work rate while retaining a bounded ambiguity in exact output energy?
 
-**Understanding target:** Derive the two-bin concentration from the short estimation interval, then account for failures across the full finite alphabet. Explain why their contribution vanishes and the battery entropy is at most $\ln 2+o(1)$, with two principal work levels separated by $o(n)$.
+**Understanding target:** Derive the two-bin concentration from the short estimation interval, then account for failures across the full finite alphabet. Explain why their contribution vanishes and the battery entropy is at most $`\ln 2+o(1)`$, with two principal work levels separated by $`o(n)`$.
 
 **Dependencies and story role:** M19, M21, and M22. This adds work quality to the rate guarantee.
 
@@ -433,7 +433,7 @@ Dependencies identify the earlier milestones needed for a conceptual step. The n
 
 **Central question:** How slowly can a permitted source approach its asymptotic rate, and why can a mean-energy bound fail to give a common sample guarantee?
 
-**Understanding target:** Connect a finite-energy tail proportional to $1/[j^2\ln^2(j+1)]$ with logarithmically slow cutoff recovery. Then distinguish it from the rare-high-energy construction, which makes fixed-sample inputs nearly indistinguishable while their target rates remain separated.
+**Understanding target:** Connect a finite-energy tail proportional to $`1/[j^2\ln^2(j+1)]`$ with logarithmically slow cutoff recovery. Then distinguish it from the rare-high-energy construction, which makes fixed-sample inputs nearly indistinguishable while their target rates remain separated.
 
 **Dependencies and story role:** M10, M17, M22, and M26. This identifies the practical content of pointwise convergence.
 
@@ -461,7 +461,7 @@ Dependencies identify the earlier milestones needed for a conceptual step. The n
 
 **Central question:** Which unavoidable entropy cost matches the construction's one-bit upper bound?
 
-**Understanding target:** Combine covariance for stationary inputs with the residual largest-atom obstruction to obtain a residual set of sources with entropy limsup at least $\ln 2$. Reconcile equality for the construction with entropy liminf zero, possible privileged sources, and the distinction between residual sets and sets of full measure.
+**Understanding target:** Combine covariance for stationary inputs with the residual largest-atom obstruction to obtain a residual set of sources with entropy limsup at least $`\ln 2`$. Reconcile equality for the construction with entropy liminf zero, possible privileged sources, and the distinction between residual sets and sets of full measure.
 
 **Dependencies and story role:** M09, M23, M24, and M28. This integrates the output construction and its converse with exact quantifiers.
 
