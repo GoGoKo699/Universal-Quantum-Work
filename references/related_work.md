@@ -1,6 +1,6 @@
 # Relation to universal work extraction and canonical estimation
 
-The result considered here is a source-independent sequence of thermal operations for an unknown iid state $`\rho`$ on a known discrete Hamiltonian with a normalizable Gibbs state $`\tau`$. For every fixed source with $`D(\rho\Vert\tau)<\infty`$, the measured work satisfies
+The result considered here is a source-independent sequence of thermal operations for an unknown iid state $`\rho`$ on a known discrete Hamiltonian with a normalizable Gibbs state $`\tau`$. For every fixed source with $`D(\rho\Vert\tau)\lt \infty`$, the measured work satisfies
 
 ```math
 \frac{W_n}{n}\longrightarrow
@@ -24,9 +24,9 @@ The distinction in the present construction is the deterministic thermal channel
 
 ```math
 \Phi_K(\rho)=\Pi_K\rho\Pi_K+
-\bigl(1-\operatorname{Tr}\Pi_K\rho\bigr)\tau_K,
+\bigl(1-\mathrm{Tr}\Pi_K\rho\bigr)\tau_K,
 \qquad
-\tau_K=\frac{\Pi_K\tau\Pi_K}{\operatorname{Tr}\Pi_K\tau}.
+\tau_K=\frac{\Pi_K\tau\Pi_K}{\mathrm{Tr}\Pi_K\tau}.
 ```
 
 It replaces an out-of-cutoff specimen by the truncated Gibbs state. Each specimen therefore produces a normalized finite-dimensional output; no whole-block survival event is required. Since the channel is an exact thermal operation and
@@ -67,7 +67,7 @@ A simple oscillator example shows that removing the tail condition changes the c
 p_j=\frac{c}{j^2\ln^2(j+1)}
 ```
 
-with normalization constant $`c`$. Its mean occupation is finite, since $`\sum_j[j\ln^2(j+1)]^{-1}<\infty`$, but $`p_j`$ is not $`O(j^{-(2+\varepsilon)})`$ for any $`\varepsilon>0`$. The present construction covers this diagonal state and coherent superpositions with the same energy populations.
+with normalization constant $`c`$. Its mean occupation is finite, since $`\sum_j[j\ln^2(j+1)]^{-1}\lt \infty`$, but $`p_j`$ is not $`O(j^{-(2+\varepsilon)})`$ for any $`\varepsilon>0`$. The present construction covers this diagonal state and coherent superpositions with the same energy populations.
 
 The convergence remains pointwise in the source. No source-independent finite-block rate, efficient circuit, bounded bath size, or finite-time implementation follows from the slowly increasing cutoff. Projection with replacement, data processing, lower semicontinuity, and diagonal selection are standard mathematical tools. The claim concerns their exact thermal implementation and the resulting source-independent extraction capability.
 

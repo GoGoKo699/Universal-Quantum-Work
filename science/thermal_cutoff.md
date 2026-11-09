@@ -13,7 +13,7 @@ H=\sum_{i=1}^{\infty}E_i|i\rangle\langle i|,
 \qquad
 0=E_1\le E_2\le\cdots,
 \qquad
-Z_\beta=\sum_i e^{-\beta E_i}<\infty.
+Z_\beta=\sum_i e^{-\beta E_i}\lt \infty.
 ```
 
 The vectors form a complete orthonormal basis, and $`H`$ denotes the self-adjoint diagonal operator with its natural domain. Fix a finite integer $`K`$. Write
@@ -38,8 +38,8 @@ The output of the compression is a state on $`\mathcal H_K`$. For any trace-clas
 
 ```math
 \Phi_K(X)
-=\Pi_KX\Pi_K+\operatorname{Tr}(Q_KX)\tau_K.
-\tag{C1}
+=\Pi_KX\Pi_K+\mathrm{Tr}(Q_KX)\tau_K.
+\qquad\text{(C1)}
 ```
 
 The first term is identified with an operator on $`\mathcal H_K`$. In particular, for a state $`\rho`$,
@@ -47,8 +47,8 @@ The first term is identified with an operator on $`\mathcal H_K`$. In particular
 ```math
 \Phi_K(\rho)
 =\Pi_K\rho\Pi_K+
-\bigl(1-\operatorname{Tr}(\Pi_K\rho)\bigr)\tau_K.
-\tag{C2}
+\bigl(1-\mathrm{Tr}(\Pi_K\rho)\bigr)\tau_K.
+\qquad\text{(C2)}
 ```
 
 The retained block preserves all coherences within the first $`K`$ energy eigenvectors. Coherences between that block and its complement are discarded. The population of the complement becomes a Gibbs contribution.
@@ -65,7 +65,7 @@ U_K\bigl(|i\rangle_S|j\rangle_A\bigr)=
 |j\rangle_S|i\rangle_A,&1\le i\le K,\ 1\le j\le K,\\
 |i\rangle_S|j\rangle_A,&i>K,\ 1\le j\le K.
 \end{cases}
-\tag{C3}
+\qquad\text{(C3)}
 ```
 
 This is a permutation of the complete product basis and satisfies $`U_K^2=I`$. It is therefore a bounded unitary. On the first block, the two systems have identical energy lists, so swapping them preserves the energy $`E_i+E_j`$. On the second block the unitary is the identity.
@@ -81,7 +81,7 @@ Equation (C3) gives
 ```math
 U_Ke^{-itH_{SA}}=e^{-itH_{SA}}U_K
 \qquad(t\in\mathbb R).
-\tag{C4}
+\qquad\text{(C4)}
 ```
 
 Thus $`U_K`$ commutes with every spectral projection of $`H_{SA}`$, maps its domain onto itself, and satisfies $`U_KH_{SA}=H_{SA}U_K`$ on that domain. Energy conservation is meant in this strong sense, rather than as a formal commutator of unbounded operators.
@@ -96,10 +96,10 @@ U_K\bigl(\Pi_K\rho\Pi_K\otimes\tau_K\bigr)U_K^\dagger
 The high-energy block remains $`Q_K\rho Q_K\otimes\tau_K`$. The two off-diagonal blocks still have source support between orthogonal low- and high-energy sectors after applying $`U_K`$, so their partial traces over the source vanish. Discarding the old source therefore gives
 
 ```math
-\operatorname{Tr}_S\!\left[
+\mathrm{Tr}_S\!\left[
 U_K(\rho\otimes\tau_K)U_K^\dagger
 \right]
-=\Pi_K\rho\Pi_K+\operatorname{Tr}(Q_K\rho)\tau_K.
+=\Pi_K\rho\Pi_K+\mathrm{Tr}(Q_K\rho)\tau_K.
 ```
 
 The appended Gibbs ancilla is the output system. This proves (C1) and its thermal implementation. $`\square`$
@@ -118,7 +118,7 @@ the channel satisfies
 
 ```math
 \Phi_K(\tau)=\tau_K.
-\tag{C5}
+\qquad\text{(C5)}
 ```
 
 The family is also consistent across cutoffs. For $`K\le L`$, let $`\Phi_{K\leftarrow L}`$ be (C1) with input space $`\mathcal H_L`$, input Hamiltonian $`H_L`$, and output Gibbs state $`\tau_K`$. The same conditional-swap construction makes it a finite-dimensional thermal operation. It satisfies
@@ -127,10 +127,10 @@ The family is also consistent across cutoffs. For $`K\le L`$, let $`\Phi_{K\left
 \Phi_{K\leftarrow L}(\tau_L)=\tau_K,
 \qquad
 \Phi_{K\leftarrow L}\circ\Phi_L=\Phi_K.
-\tag{C6}
+\qquad\text{(C6)}
 ```
 
-For the second identity, set $`t_J=\operatorname{Tr}(\Pi_J\rho)`$. Linearity of (C1) gives
+For the second identity, set $`t_J=\mathrm{Tr}(\Pi_J\rho)`$. Linearity of (C1) gives
 
 ```math
 \Phi_{K\leftarrow L}(\Pi_L\rho\Pi_L)
@@ -146,7 +146,7 @@ D\bigl(\Phi_K(\rho)\|\tau_K\bigr)
 \le
 D\bigl(\Phi_L(\rho)\|\tau_L\bigr)
 \le D(\rho\|\tau).
-\tag{C7}
+\qquad\text{(C7)}
 ```
 
 Data processing and joint lower semicontinuity are standard properties of relative entropy on separable Hilbert spaces. The form used here, including infinite values and trace-norm convergence, is stated in Shirokov's discussion of these properties in [2024, §1](https://www.mathnet.ru/php/archive.phtml?jrnid=sm&option_lang=eng&paperid=10107&wshow=paper); see also [2022, equations (1.1) and (3.1)](https://doi.org/10.4213/sm9794e).
@@ -161,12 +161,12 @@ For this argument, embed the output state $`\Phi_K(\rho)`$ and $`\tau_K`$ back i
 D\bigl(\Phi_K(\rho)\|\tau_K\bigr)
 \uparrow D(\rho\|\tau)
 \qquad(K\to\infty),
-\tag{C8}
+\qquad\text{(C8)}
 ```
 
 where the limit may be $`+\infty`$.
 
-**Proof.** Put $`\delta_K=\operatorname{Tr}(Q_K\rho)`$. Strong convergence $`\Pi_K\to I`$ and trace-classness of $`\rho`$ imply $`\delta_K\to0`$. The decomposition
+**Proof.** Put $`\delta_K=\mathrm{Tr}(Q_K\rho)`$. Strong convergence $`\Pi_K\to I`$ and trace-classness of $`\rho`$ imply $`\delta_K\to0`$. The decomposition
 
 ```math
 \rho-\Pi_K\rho\Pi_K
@@ -193,7 +193,7 @@ Hence
 \|\Phi_K(\rho)-\rho\|_1
 \le2\sqrt{\delta_K}+\delta_K
 \longrightarrow0.
-\tag{C9}
+\qquad\text{(C9)}
 ```
 
 For the Gibbs state, orthogonality of the retained and discarded sectors gives the exact identity
@@ -202,7 +202,7 @@ For the Gibbs state, orthogonality of the retained and discarded sectors gives t
 \|\tau_K-\tau\|_1
 =2\left(1-\frac{Z_K}{Z_\beta}\right)
 \longrightarrow0.
-\tag{C10}
+\qquad\text{(C10)}
 ```
 
 Joint lower semicontinuity therefore yields
@@ -231,6 +231,6 @@ The product operation $`\Phi_K^{\otimes n}`$ maps $`\rho^{\otimes n}`$ exactly t
 
 The retained free-energy rate at fixed $`K`$ is $`f_K(\rho)`$. Once the finite-dimensional protocol has reached its prescribed accuracy, the cutoff can be increased. Proposition C2 ensures that any schedule $`K(n)\to\infty`$ eventually recovers the entire rate for each fixed source, provided that the finite-dimensional processing errors also vanish along that schedule.
 
-This differs operationally from requiring all $`n`$ specimens to lie in the cutoff sector. That event has probability $`[\operatorname{Tr}(\Pi_K\rho)]^n`$, which vanishes at fixed $`K`$ whenever the source has nonzero tail population. Watanabe and Takagi's infinite-dimensional construction uses an increasing cutoff to control that event and imposes its stated source restrictions; see [their main-text discussion after Theorem 3](https://pmc.ncbi.nlm.nih.gov/articles/PMC12957447/). Here the finite-dimensional state is obtained with certainty, and the quantity that converges is its relative entropy.
+This differs operationally from requiring all $`n`$ specimens to lie in the cutoff sector. That event has probability $`[\mathrm{Tr}(\Pi_K\rho)]^n`$, which vanishes at fixed $`K`$ whenever the source has nonzero tail population. Watanabe and Takagi's infinite-dimensional construction uses an increasing cutoff to control that event and imposes its stated source restrictions; see [their main-text discussion after Theorem 3](https://pmc.ncbi.nlm.nih.gov/articles/PMC12957447/). Here the finite-dimensional state is obtained with certainty, and the quantity that converges is its relative entropy.
 
 The next page, [the universal protocol](universal_protocol.md), chooses the increasing cutoff together with the estimation and extraction accuracies. The choice depends only on $`H`$, $`\beta`$, and the fixed battery gap.

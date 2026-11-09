@@ -6,7 +6,7 @@ The selected educational anchor is Matteo Lostaglio, *An introductory review of 
 
 ## 1. What the engine receives and stores
 
-The source has known energy levels and Gibbs state $`\tau=e^{-\beta H}/Z_\beta`$, where $`Z_\beta=\operatorname{Tr}e^{-\beta H}<\infty`$. Here $`\beta=1/(k_{\mathrm B}T)`$, and all logarithms are natural. Its unknown state is $`\rho`$. Independent, identically prepared specimens mean that the joint input at block length $`n`$ is $`\rho^{\otimes n}`$.
+The source has known energy levels and Gibbs state $`\tau=e^{-\beta H}/Z_\beta`$, where $`Z_\beta=\mathrm{Tr}e^{-\beta H}\lt \infty`$. Here $`\beta=1/(k_{\mathrm B}T)`$, and all logarithms are natural. Its unknown state is $`\rho`$. Independent, identically prepared specimens mean that the joint input at block length $`n`$ is $`\rho^{\otimes n}`$.
 
 A thermal operation appends systems in their Gibbs states at the same temperature, applies a unitary preserving total energy, and discards systems. For unbounded Hamiltonians, the project states energy conservation through commutation with the full time evolution. Each engine uses only finitely many finite-dimensional thermal ancillas. Their sizes may increase with $`n`$.
 
@@ -16,7 +16,7 @@ The available work rate is
 f(\rho)=\frac{D(\rho\|\tau)}{\beta}.
 ```
 
-Relative entropy $`D`$ measures distinguishability from the equilibrium state. For finite mean energy, this expression becomes $`\operatorname{Tr}(H\rho)-S(\rho)/\beta+\ln Z_\beta/\beta`$, with $`S(\rho)=-\operatorname{Tr}(\rho\ln\rho)`$. It is free energy above equilibrium, measured in units of energy. The relative-entropy definition also handles admissible states whose energy and entropy are separately infinite. The theorem assumes $`D(\rho\|\tau)<\infty`$, and covers every finite-energy oscillator state.
+Relative entropy $`D`$ measures distinguishability from the equilibrium state. For finite mean energy, this expression becomes $`\mathrm{Tr}(H\rho)-S(\rho)/\beta+\ln Z_\beta/\beta`$, with $`S(\rho)=-\mathrm{Tr}(\rho\ln\rho)`$. It is free energy above equilibrium, measured in units of energy. The relative-entropy definition also handles admissible states whose energy and entropy are separately infinite. The theorem assumes $`D(\rho\|\tau)\lt \infty`$, and covers every finite-energy oscillator state.
 
 The battery is one oscillator with energies $`0,\Delta,2\Delta,\ldots`$ and starts in its ground state. Its gap $`\Delta`$ stays fixed across sources and block lengths. Raising it to the pure level $`|k\rangle`$ stores $`k\Delta`$ of energy without increasing entropy. A mixed battery output requires more care.
 
@@ -83,7 +83,7 @@ The actual cutoff always produces an output. Let $`\Pi_K`$ project onto the firs
 
 ```math
 \Phi_K(\rho)=\Pi_K\rho\Pi_K+
-\bigl(1-\operatorname{Tr}(\Pi_K\rho)\bigr)\tau_K.
+\bigl(1-\mathrm{Tr}(\Pi_K\rho)\bigr)\tau_K.
 ```
 
 It preserves the low-energy block, including its internal coherence, and replaces the remaining population by $`\tau_K`$. An exact thermal implementation appends a $`K`$-level Gibbs ancilla, swaps it with the source on the low-energy sector, acts as the identity on the high-energy sector, and discards the original source. Equal energies are exchanged in each swapped pair.

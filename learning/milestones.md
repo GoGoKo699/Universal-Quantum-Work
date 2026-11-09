@@ -81,7 +81,7 @@ Dependencies identify the earlier milestones needed for a conceptual step. The n
 
 **Central question:** Which uncertainty does quantum entropy measure, and how does it differ from uncertainty in an energy measurement?
 
-**Understanding target:** Interpret $`S(\rho)=-\operatorname{Tr}\rho\ln\rho`$ through the state's eigenvalues. Distinguish pure-state entropy from the entropy of measured energy populations, and recognize why a mixed battery output requires more description than its mean energy.
+**Understanding target:** Interpret $`S(\rho)=-\mathrm{Tr}\rho\ln\rho`$ through the state's eigenvalues. Distinguish pure-state entropy from the entropy of measured energy populations, and recognize why a mixed battery output requires more description than its mean energy.
 
 **Dependencies and story role:** M01. Entropy connects local state information to the later accounting of free energy and work quality.
 
@@ -279,7 +279,7 @@ Dependencies identify the earlier milestones needed for a conceptual step. The n
 
 **Central question:** How can every source copy enter a finite-dimensional protocol without conditioning on a rare collective event?
 
-**Understanding target:** Understand the channel $`\Phi_K(\rho)=\Pi_K\rho\Pi_K+\operatorname{Tr}(Q_K\rho)\tau_K`$, where $`\Pi_K`$ projects onto the first $`K`$ energy eigenvectors and $`Q_K=I-\Pi_K`$. Follow its conditional-swap implementation, identify the retained ancilla, and explain why low-energy coherence survives while tail information is discarded without postselection.
+**Understanding target:** Understand the channel $`\Phi_K(\rho)=\Pi_K\rho\Pi_K+\mathrm{Tr}(Q_K\rho)\tau_K`$, where $`\Pi_K`$ projects onto the first $`K`$ energy eigenvectors and $`Q_K=I-\Pi_K`$. Follow its conditional-swap implementation, identify the retained ancilla, and explain why low-energy coherence survives while tail information is discarded without postselection.
 
 **Dependencies and story role:** M05 and M15. This supplies the exact physical reduction on which the remaining construction rests.
 

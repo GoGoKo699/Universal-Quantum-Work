@@ -19,7 +19,7 @@ The main step is a finite thermal replacement channel. It keeps the low-energy b
 ```math
 \Phi_K(\rho)
 =\Pi_K\rho\Pi_K
-+\operatorname{Tr}[(I-\Pi_K)\rho]\,\tau_K.
++\mathrm{Tr}[(I-\Pi_K)\rho]\,\tau_K.
 ```
 
 A conditional swap with a Gibbs ancilla implements this channel exactly. It never rejects a specimen, and

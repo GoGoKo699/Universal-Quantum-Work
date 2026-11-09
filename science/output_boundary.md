@@ -8,7 +8,7 @@ All logarithms are natural. A residual set is the complement of a countable unio
 
 ## 1. A continuous family of experiments
 
-Let $`I=[a,b]`$ be a compact interval with $`a<b`$. For each positive integer $`n`$, let
+Let $`I=[a,b]`$ be a compact interval with $`a\lt b`$. For each positive integer $`n`$, let
 
 ```math
 \theta\longmapsto\sigma_{n,\theta}
@@ -150,7 +150,7 @@ R=I\setminus
 \bigcup_{N=1}^{\infty}F_N(c).
 ```
 
-This is a dense $`G_\delta`$ set by Baire's theorem. For $`\theta\in R`$, every rational $`c>1/2`$ and every $`N`$ admit an $`n\geq N`$ with $`m_n(\theta)<c`$. This is exactly the asserted liminf bound. $`\square`$
+This is a dense $`G_\delta`$ set by Baire's theorem. For $`\theta\in R`$, every rational $`c>1/2`$ and every $`N`$ admit an $`n\geq N`$ with $`m_n(\theta)\lt c`$. This is exactly the asserted liminf bound. $`\square`$
 
 Define the classical min-entropy and Shannon entropy of the output label by
 
@@ -176,7 +176,7 @@ Infinite Shannon entropy is allowed and makes the second inequality immediate. N
 Let $`P_w`$ be the spectral projections of a countable-spectrum battery Hamiltonian, and let $`\omega_{n,\theta}`$ be the battery output. Apply Theorem 2 to the energy distribution
 
 ```math
-p_{n,w}(\theta)=\operatorname{Tr}(P_w\omega_{n,\theta}).
+p_{n,w}(\theta)=\mathrm{Tr}(P_w\omega_{n,\theta}).
 ```
 
 If $`\omega_{n,\theta}`$ commutes with the battery Hamiltonian, its energy blocks are orthogonal and
@@ -308,7 +308,7 @@ Write $`a_K`$ for the bin width and $`s_K`$ for the original estimation toleranc
 
 Increase the even stage thresholds so that, uniformly over all $`K`$-dimensional inputs and throughout stage $`K`$, the probability of a training error larger than $`\delta_K`$ is at most $`\eta_K/2`$. The finite-dimensional concentration bound permits this at every fixed $`K`$. Retain the extraction-error bound $`\eta_K/2`$. Since $`\delta_K\leq s_K`$, every earlier extraction promise and rate estimate remains valid. The operations change only through the longer source-independent stage schedule.
 
-For the family of Section 4 built from the first two oscillator energy eigenvectors, the cutoff leaves $`\rho_p`$ unchanged for $`K\geq2`$. With $`q_K=\operatorname{Tr}(\Pi_K\tau)`$,
+For the family of Section 4 built from the first two oscillator energy eigenvectors, the cutoff leaves $`\rho_p`$ unchanged for $`K\geq2`$. With $`q_K=\mathrm{Tr}(\Pi_K\tau)`$,
 
 ```math
 f_K(p)=f(p)+\frac{\ln q_K}{\beta}.
@@ -324,7 +324,7 @@ For the two unshifted and half-shifted grids, define the boundary-strip set
 
 ```math
 B_K=\left\{p\in I:
-\operatorname{dist}\!\left(
+\mathrm{dist}\!\left(
 f_K(p),\,a_K\mathbb Z\cup a_K(\mathbb Z+1/2)
 \right)\leq\delta_K\right\}.
 ```
@@ -335,7 +335,7 @@ The same estimate below holds after any predetermined common translation of the 
 |B_K|
 \leq\frac{4(L+3a_2)}{c_I}\frac{\delta_K}{a_K},
 \qquad
-\sum_{K=2}^{\infty}|B_K|<\infty.
+\sum_{K=2}^{\infty}|B_K|\lt \infty.
 ```
 
 Here $`|\cdot|`$ denotes Lebesgue measure in the scalar parameter $`p`$. The first Borel–Cantelli lemma implies that almost every $`p`$ belongs to only finitely many $`B_K`$. At each later stage, both grids then place every $`\delta_K`$-accurate estimate in one bin. At every block length in those stages, its one target level has probability at least $`1-\eta_K`$. Therefore

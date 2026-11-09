@@ -13,8 +13,8 @@ H=\sum_{i=1}^{\infty}E_i|i\rangle\langle i|,
 \qquad
 0=E_1\le E_2\le\cdots,
 \qquad
-Z_\beta=\operatorname{Tr}e^{-\beta H}<\infty,
-\tag{M1}
+Z_\beta=\mathrm{Tr}e^{-\beta H}\lt \infty,
+\qquad\text{(M1)}
 ```
 
 for a fixed inverse temperature $`\beta>0`$. A constant energy shift has been used to put the ground energy at zero. The operator is self-adjoint on its natural domain. The finite partition function implies finite multiplicity below every finite energy and $`E_i\to\infty`$.
@@ -25,10 +25,10 @@ Write
 \tau=\frac{e^{-\beta H}}{Z_\beta},
 \qquad
 \mathcal S_D=
-\{\rho\in\mathcal D(\mathcal H):D(\rho\|\tau)<\infty\},
+\{\rho\in\mathcal D(\mathcal H):D(\rho\|\tau)\lt \infty\},
 \qquad
 f(\rho)=\frac1\beta D(\rho\|\tau).
-\tag{M2}
+\qquad\text{(M2)}
 ```
 
 All logarithms are natural. Relative entropy is understood in its standard extended-valued form for density operators on a separable Hilbert space. In particular, its definition is not an unevaluated subtraction of two infinite entropies.
@@ -37,12 +37,12 @@ When the source has finite mean energy, its entropy is finite and
 
 ```math
 f(\rho)
-=\operatorname{Tr}(H\rho)-\frac{S(\rho)}\beta
+=\mathrm{Tr}(H\rho)-\frac{S(\rho)}\beta
  +\frac{\ln Z_\beta}\beta.
-\tag{M3}
+\qquad\text{(M3)}
 ```
 
-Finiteness follows from the Gibbs variational bound $`S(\rho)\le\beta\operatorname{Tr}(H\rho)+\ln Z_\beta`$. The theorem itself assumes only finite $`D(\rho\|\tau)`$, so that it also covers Hamiltonians and states for which the energy and entropy terms in (M3) are separately infinite. The relative-entropy formulation remains well defined in that case.
+Finiteness follows from the Gibbs variational bound $`S(\rho)\le\beta\mathrm{Tr}(H\rho)+\ln Z_\beta`$. The theorem itself assumes only finite $`D(\rho\|\tau)`$, so that it also covers Hamiltonians and states for which the energy and entropy terms in (M3) are separately infinite. The relative-entropy formulation remains well defined in that case.
 
 The input at block length $`n`$ is $`\rho^{\otimes n}`$ for one fixed but unknown $`\rho`$. The processor receives no classical description of $`\rho`$, candidate list, energy ceiling, or tail bound. The Hamiltonian, temperature, and integer $`n`$ remain available to its designer.
 
@@ -54,7 +54,7 @@ Choose any fixed gap $`\Delta>0`$. The work storage system is
 \mathcal H_W=\ell^2(\mathbb N_0),
 \qquad
 H_W=\Delta\sum_{k=0}^{\infty}k|k\rangle\langle k|.
-\tag{M4}
+\qquad\text{(M4)}
 ```
 
 It starts each block in $`|0\rangle\langle0|`$. The battery Hilbert space and Hamiltonian are the same for every $`n`$ and every source. Its Gibbs state is
@@ -63,7 +63,7 @@ It starts each block in $`|0\rangle\langle0|`$. The battery Hilbert space and Ha
 \tau_W=\frac{e^{-\beta H_W}}{Z_W},
 \qquad
 Z_W=\frac1{1-e^{-\beta\Delta}}.
-\tag{M5}
+\qquad\text{(M5)}
 ```
 
 Only finitely many battery levels are used at any particular block length. There is no dimension bound on the union of those levels as $`n`$ increases. The specified ground state is the initial work-storage resource, not an uncounted auxiliary pure state.
@@ -73,16 +73,16 @@ Only finitely many battery levels are used at any particular block length. There
 For each $`n`$, the processor appends a finite-dimensional ancillary system $`B_n`$ with a specified Hamiltonian $`G_n`$ and Gibbs state
 
 ```math
-\gamma_n=\frac{e^{-\beta G_n}}{\operatorname{Tr}e^{-\beta G_n}}.
+\gamma_n=\frac{e^{-\beta G_n}}{\mathrm{Tr}e^{-\beta G_n}}.
 ```
 
 A product of finitely many finite Gibbs ancillas is included in this notation. It applies a unitary $`U_n`$ on source, battery, and ancilla, and discards everything except the battery:
 
 ```math
 \mathcal T_n(X)
-=\operatorname{Tr}_{S^nB_n}
+=\mathrm{Tr}_{S^nB_n}
 \left[U_n(X\otimes\gamma_n)U_n^\dagger\right].
-\tag{M6}
+\qquad\text{(M6)}
 ```
 
 The unitary preserves total energy in the strong sense
@@ -91,7 +91,7 @@ The unitary preserves total energy in the strong sense
 U_ne^{-itH_{\mathrm{tot},n}}
 =e^{-itH_{\mathrm{tot},n}}U_n
 \qquad(t\in\mathbb R),
-\tag{M7}
+\qquad\text{(M7)}
 ```
 
 where
@@ -115,7 +115,7 @@ For a source $`\rho`$, denote the battery state by
 =\mathcal T_n\!\left(
 \rho^{\otimes n}\otimes|0\rangle\langle0|
 \right).
-\tag{M8}
+\qquad\text{(M8)}
 ```
 
 Let $`X_n`$ be its energy measurement outcome:
@@ -123,12 +123,12 @@ Let $`X_n`$ be its energy measurement outcome:
 ```math
 \Pr_\rho[X_n=k\Delta]
 =\langle k|\omega_n(\rho)|k\rangle.
-\tag{M9}
+\qquad\text{(M9)}
 ```
 
 Since the initial energy is zero, $`X_n`$ is the battery's energy increase. A full-sequence work-rate criterion requires $`X_n/n`$ to concentrate at the claimed rate for every sufficiently large block length.
 
-For comparison with an exact-level criterion, fix $`0<\varepsilon<1/2`$ and define
+For comparison with an exact-level criterion, fix $`0\lt \varepsilon\lt 1/2`$ and define
 
 ```math
 \mathcal W_n^\varepsilon(\rho)
@@ -138,7 +138,7 @@ For comparison with an exact-level criterion, fix $`0<\varepsilon<1/2`$ and defi
 \langle k|\omega_n(\rho)|k\rangle\ge1-\varepsilon
 \right\}
 \right).
-\tag{M10}
+\qquad\text{(M10)}
 ```
 
 The value is conventionally zero if no level has the required population; in that case it does not certify concentration at the ground level. Since $`1-\varepsilon>1/2`$, at most one nonzero level can qualify. An exact pure-level fidelity criterion gives the same asymptotic expression below, whether fidelity denotes the squared overlap or its square root, after reparameterizing $`\varepsilon`$.
@@ -154,7 +154,7 @@ The value is conventionally zero if no level has the required population; in tha
 \mathbb E_\rho\left|
 \frac{X_n}{n}-f(\rho)
 \right|=0.
-\tag{M11}
+\qquad\text{(M11)}
 ```
 
 In particular,
@@ -162,9 +162,9 @@ In particular,
 ```math
 \frac{X_n}{n}\xrightarrow{\Pr}f(\rho),
 \qquad
-\frac{\operatorname{Tr}(H_W\omega_n(\rho))}{n}
+\frac{\mathrm{Tr}(H_W\omega_n(\rho))}{n}
 \longrightarrow f(\rho).
-\tag{M12}
+\qquad\text{(M12)}
 ```
 
 **A finite alphabet and two principal levels.** At each $`n`$, the output is diagonal and supported on a finite set $`\mathcal A_n\subset\Delta\mathbb N_0`$ fixed independently of the source. There are source-independent sequences $`\delta_n,\xi_n\to0`$ such that, for each source, a subset $`\mathcal B_{n,\rho}\subset\mathcal A_n`$ satisfies
@@ -174,8 +174,8 @@ In particular,
 \qquad
 \Pr_\rho[X_n\in\mathcal B_{n,\rho}]\ge1-\delta_n,
 \qquad
-\operatorname{diam}(\mathcal B_{n,\rho})\le n\xi_n.
-\tag{M13}
+\mathrm{diam}(\mathcal B_{n,\rho})\le n\xi_n.
+\qquad\text{(M13)}
 ```
 
 The two values are neighboring values of a coarse work grid. They need not be adjacent oscillator levels.
@@ -184,7 +184,7 @@ The two values are neighboring values of a coarse work grid. They need not be ad
 
 ```math
 S(\omega_n(\rho))\le\ln2+u_n.
-\tag{M14}
+\qquad\text{(M14)}
 ```
 
 Thus the output entropy is at most one bit asymptotically, including the contribution of the low-probability labels outside $`\mathcal B_{n,\rho}`$.
@@ -196,7 +196,7 @@ Thus the output entropy is at most one bit asymptotically, including the contrib
 \limsup_{n\to\infty}
 \frac{\mathcal W_n^\varepsilon(\rho)}n
 =\frac{D(\rho\|\tau)}\beta.
-\tag{M15}
+\qquad\text{(M15)}
 ```
 
 The favorable member of each pair may depend on $`\rho`$. All operations, grids, and stage boundaries are fixed independently of $`\rho`$.
@@ -210,7 +210,7 @@ The [thermal compression theorem](thermal_cutoff.md) gives an exact thermal oper
 \qquad
 \frac1\beta D(\Phi_K(\rho)\|\tau_K)
 \uparrow f(\rho).
-\tag{M16}
+\qquad\text{(M16)}
 ```
 
 The [finite extraction primitive](finite_extraction.md) supplies a state-uniform, fixed-threshold extractor on each finite cutoff system. The [universal protocol](universal_protocol.md) combines that primitive with energy-commuting training, conservative scalar work bins, and a source-independent sequence of even stage boundaries. Its finite-stage bounds prove (M11)–(M14) and the subsequence lower bound in (M15).
@@ -220,7 +220,7 @@ For the matching upper bound, every thermal operation in this model preserves th
 ```math
 D(\omega_n(\rho)\|\tau_W)
 \le nD(\rho\|\tau)+\ln Z_W.
-\tag{M17}
+\qquad\text{(M17)}
 ```
 
 Binary data processing for the population of a claimed work level bounds its energy at any fixed success probability. Taking the block-length limsup and then $`\varepsilon\downarrow0`$ gives the upper bound in (M15). The complete argument, including the threshold and mean-work formulations, is in the [converse](converse.md). $`\square`$
@@ -236,10 +236,10 @@ The entropy control also identifies the rate as stored thermodynamic free energy
 D(\omega_n(\rho)\|\tau_W)
 -D(|0\rangle\langle0|\|\tau_W)
 }{\beta n}
-=\frac{\operatorname{Tr}(H_W\omega_n(\rho))}{n}
+=\frac{\mathrm{Tr}(H_W\omega_n(\rho))}{n}
  -\frac{S(\omega_n(\rho))}{\beta n}
 \longrightarrow f(\rho).
-\tag{M18}
+\qquad\text{(M18)}
 ```
 
 The one-bit bound concerns the battery's entropy. It does not say that the finite-block work deficit is at most $`\beta^{-1}\ln2`$: the cutoff, training, and conservative grid losses can be larger while remaining sublinear in $`n`$.

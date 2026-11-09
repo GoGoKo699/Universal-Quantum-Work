@@ -6,7 +6,7 @@ Read the [model and theorem](model_theorem.md) for the resource convention and t
 
 ## 1. A relative-entropy budget for the battery
 
-Let the source Gibbs state be $`\tau`$, let $`D(\rho\Vert\tau)<\infty`$, and use the fixed oscillator battery
+Let the source Gibbs state be $`\tau`$, let $`D(\rho\Vert\tau)\lt \infty`$, and use the fixed oscillator battery
 
 ```math
 H_W=\Delta\sum_{k=0}^{\infty} k|k\rangle\langle k|,
@@ -14,7 +14,7 @@ H_W=\Delta\sum_{k=0}^{\infty} k|k\rangle\langle k|,
 \tau_W=Z_W^{-1}e^{-\beta H_W},
 \qquad
 Z_W=\frac{1}{1-e^{-\beta\Delta}}.
-\tag{V1}
+\qquad\text{(V1)}
 ```
 
 The battery starts in its ground state. A thermal operation from the source and battery to the battery maps $`\tau^{\otimes n}\otimes\tau_W`$ to $`\tau_W`$. This follows directly by appending Gibbs states, commuting the joint unitary with the additive Hamiltonian, and tracing out the other systems.
@@ -28,7 +28,7 @@ D(\omega_{W,n}\Vert\tau_W)
 \,\middle\Vert\,\tau^{\otimes n}\otimes\tau_W\right)\\
 &=nD(\rho\Vert\tau)+\ln Z_W.
 \end{aligned}
-\tag{V2}
+\qquad\text{(V2)}
 ```
 
 The term $`\ln Z_W`$ is the initial battery's own finite athermality. It contributes no nonzero rate as $`n`$ grows. No source estimate or source-independence assumption is needed for this upper bound.
@@ -39,11 +39,11 @@ For a proposed work density $`w>0`$, measure whether the battery energy is at le
 
 ```math
 q_n(w)
-=\operatorname{Tr}\!\left[
+=\mathrm{Tr}\!\left[
 \mathbf 1_{[nw,\infty)}(H_W)\tau_W\right]
 =e^{-\beta\Delta\lceil nw/\Delta\rceil}
 \le e^{-\beta nw}.
-\tag{V3}
+\qquad\text{(V3)}
 ```
 
 Write $`p_n(w)`$ for the corresponding probability in $`\omega_{W,n}`$. Applying data processing once more, now to this binary measurement, yields
@@ -55,7 +55,7 @@ nD(\rho\Vert\tau)+\ln Z_W
 &\ge p_n(w)\ln\frac{1}{q_n(w)}-h_2\bigl(p_n(w)\bigr)\\
 &\ge \beta nw\,p_n(w)-\ln2.
 \end{aligned}
-\tag{V4}
+\qquad\text{(V4)}
 ```
 
 Here $`d`$ is binary relative entropy and $`h_2`$ is binary entropy. Consequently,
@@ -63,14 +63,14 @@ Here $`d`$ is binary relative entropy and $`h_2`$ is binary entropy. Consequentl
 ```math
 p_n(w)\le
 \frac{nD(\rho\Vert\tau)+\ln Z_W+\ln2}{\beta nw}.
-\tag{V5}
+\qquad\text{(V5)}
 ```
 
-If the energy density converges in probability to a finite value $`v`$, then $`p_n(w)\to1`$ for every $`0<w<v`$. Equation (V4), followed by $`w\uparrow v`$, proves
+If the energy density converges in probability to a finite value $`v`$, then $`p_n(w)\to1`$ for every $`0\lt w\lt v`$. Equation (V4), followed by $`w\uparrow v`$, proves
 
 ```math
 v\le f(\rho):=\frac{D(\rho\Vert\tau)}{\beta}.
-\tag{V6}
+\qquad\text{(V6)}
 ```
 
 This converse permits coherent or mixed battery outputs and makes no assumption about their entropy. It is a weak converse for reliable work: it excludes success probability tending to one above $`f(\rho)`$, but does not assert that the success probability must tend to zero there.
@@ -82,7 +82,7 @@ Suppose a processor places probability at least $`1-\varepsilon`$ on an individu
 ```math
 (1-\varepsilon)\beta w_n
 \le nD(\rho\Vert\tau)+\ln Z_W+\ln2.
-\tag{V7}
+\qquad\text{(V7)}
 ```
 
 Thus the ordered criterion that first takes a $`\limsup`$ over batch size and then lets $`\varepsilon\downarrow0`$ is also bounded by $`f(\rho)`$. The paired-grid construction in the [universal protocol](universal_protocol.md) attains this criterion. It does not promise a sharply selected individual label at every sufficiently large batch size.
@@ -93,32 +93,32 @@ The constructed battery output has a finite energy alphabet at every $`n`$, and 
 
 ```math
 S(\omega_{W,n})\le\ln2+o(1).
-\tag{V8}
+\qquad\text{(V8)}
 ```
 
 Its energy and entropy are therefore finite. Expanding the left side of (V2) is legitimate and gives
 
 ```math
-\beta\operatorname{Tr}(H_W\omega_{W,n})
+\beta\mathrm{Tr}(H_W\omega_{W,n})
 -S(\omega_{W,n})
 \le nD(\rho\Vert\tau).
-\tag{V9}
+\qquad\text{(V9)}
 ```
 
-The upper limit of the mean work per source copy is at most $`f(\rho)`$. For the reverse inequality, let $`X_n`$ denote the battery energy. The facts that $`X_n\ge0`$ and $`X_n/n\to f(\rho)`$ in probability imply, for every $`0<\delta<f(\rho)`$,
+The upper limit of the mean work per source copy is at most $`f(\rho)`$. For the reverse inequality, let $`X_n`$ denote the battery energy. The facts that $`X_n\ge0`$ and $`X_n/n\to f(\rho)`$ in probability imply, for every $`0\lt \delta\lt f(\rho)`$,
 
 ```math
 \frac{\mathbb E X_n}{n}
 \ge(f(\rho)-\delta)
 \Pr\!\left[\frac{X_n}{n}\ge f(\rho)-\delta\right].
-\tag{V10}
+\qquad\text{(V10)}
 ```
 
 Taking the lower limit and then $`\delta\downarrow0`$ proves
 
 ```math
 \frac{\mathbb E X_n}{n}\longrightarrow f(\rho).
-\tag{V11}
+\qquad\text{(V11)}
 ```
 
 For $`f(\rho)=0`$, nonnegativity and (V9) suffice. The battery's own nonequilibrium free energy has the same rate because its entropy divided by $`n`$ vanishes. This identifies the output as work at the asymptotic rate claimed here, while the [output boundary](output_boundary.md) explains the residual uncertainty between individual energy labels.
