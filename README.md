@@ -44,6 +44,12 @@ Uniform finite-dimensional extraction can therefore be combined with an arbitrar
 
 The construction uses exact global energy conservation, finite Gibbs ancillas at each batch size, and a battery that always starts at zero energy. It requires no initially pure auxiliary memory, catalyst, external phase reference, or work loan. Bath dimension, bath energy, control complexity, and running time can grow very rapidly. The result establishes an asymptotic capability, with no efficiency claim.
 
+## Learn the framework
+
+The [learning route](learning/README.md) uses Matteo Lostaglio’s *An introductory review of the resource theory approach to thermodynamics*, **arXiv:1807.11549v2 (2019)**, as its single educational anchor. The [source-to-project bridge](learning/anchor_bridge.md) develops a complete energy-transfer example and connects thermal operations, collective coherence, and work storage to this construction.
+
+The [30-milestone map](learning/milestones.md) follows the project’s dependencies: fourteen background milestones build the finite-dimensional engine, and sixteen narrative milestones develop the cutoff, universal control, output guarantees, and their limits. The map describes common understanding targets; the proof route below remains the authoritative scientific account.
+
 ## Read the science
 
 Start with the [scientific overview](science/README.md). For a direct proof route, read:

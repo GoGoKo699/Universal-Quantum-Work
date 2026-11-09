@@ -40,4 +40,4 @@ The [related-work account](../references/related_work.md) identifies which compo
 
 The [finite checks](../verification/README.md) verify representative dilation formulas and energy-conserving permutations, including coherent inputs. They complement the proofs; they cannot establish an asymptotic theorem about all infinite-dimensional sources.
 
-Return to the [repository overview](../README.md).
+For the educational entry point, use the [Lostaglio bridge](../learning/anchor_bridge.md) and [30-milestone map](../learning/milestones.md). Return to the [repository overview](../README.md).

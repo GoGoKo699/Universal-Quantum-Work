@@ -50,3 +50,9 @@ The later geometric-partition literature includes *Replicability in Learning: Ge
 ## Reading boundary
 
 The Baire argument, Gibbs-replacement channel, resource accounting, and output-entropy estimates are stated and proved in the scientific pages. The references supply imported ingredients and comparisons. The absence of a matching statement in this bounded source set does not establish that every component is new. In particular, standard projection-and-replacement channels, relative-entropy approximation, diagonal schedules, and two-list rounding are not claimed as new mathematical principles.
+
+## Selected educational anchor
+
+**Lostaglio2019:** Matteo Lostaglio, [*An introductory review of the resource theory approach to thermodynamics*, arXiv:1807.11549v2, 7 October 2019](https://arxiv.org/abs/1807.11549v2), published in *Reports on Progress in Physics* **82**, 114001 (2019), [DOI:10.1088/1361-6633/ab46e5](https://doi.org/10.1088/1361-6633/ab46e5).
+
+The [learning bridge](../learning/anchor_bridge.md) uses the pinned PDF’s Sections I.A–C (resource accounting and thermal operations), II.B–C (state conversion and free energy), II.C.3 (work storage), and III.A.2–A.4 (covariance and work-locking, especially Eqs. 53–54). The arXiv HTML numbers the lettered subsections, for example I.C as I.3. This is the sole educational anchor. The other references above remain research ingredients or comparisons; they are not additional prerequisite texts. The review supplies the operational framework, while the local scientific pages supply the unbounded-source cutoff, explicit finite engine, universal schedule, and output analysis.
