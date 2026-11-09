@@ -1,0 +1,103 @@
+{
+  "scope": "Finite constructions and a cutoff illustration; not an asymptotic numerical proof.",
+  "tolerance": 2e-12,
+  "cutoff": {
+    "unitary": {
+      "unitarity": 0.0,
+      "energy_commutator": 0.0
+    },
+    "gibbs_preservation_error": 0.0,
+    "states": {
+      "coherent_pure": {
+        "channel_error": 1.1490668341894787e-16,
+        "nesting_error": 2.7755575615628914e-17,
+        "divergences": [
+          0.0,
+          0.0028768926599875844,
+          0.6173859482298518,
+          0.8639665996451079,
+          3.073624276949854
+        ]
+      },
+      "mixed": {
+        "channel_error": 6.206347190164854e-17,
+        "nesting_error": 5.551115123125783e-17,
+        "divergences": [
+          2.220446049250313e-16,
+          0.012518452813983338,
+          0.08575034862852138,
+          0.4086938242567375,
+          0.8409666023144002
+        ]
+      },
+      "high_energy": {
+        "channel_error": 0.0,
+        "nesting_error": 1.1102230246251565e-16,
+        "divergences": [
+          0.0,
+          -1.1102230246251565e-16,
+          0.0,
+          0.0,
+          5.038118626131338
+        ]
+      },
+      "gibbs": {
+        "channel_error": 0.0,
+        "nesting_error": 1.1102230246251565e-16,
+        "divergences": [
+          0.0,
+          -1.1102230246251565e-16,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "decoder": {
+    "unitary": {
+      "unitarity": 0.0,
+      "energy_commutator": 0.0
+    },
+    "states": {
+      "excited": {
+        "ground_population": 0.8333333333333335,
+        "off_diagonal_norm": 0.0
+      },
+      "gibbs": {
+        "ground_population": 0.5,
+        "off_diagonal_norm": 0.0
+      },
+      "coherent": {
+        "ground_population": 0.5833333333333334,
+        "off_diagonal_norm": 0.0
+      }
+    },
+    "unique_acceptance_lower_bound": 0.6666666666666666
+  },
+  "charging": {
+    "unitary": {
+      "unitarity": 0.0,
+      "energy_commutator": 0.0
+    },
+    "position_ground_probabilities": {
+      "1.0": {
+        "actual_success": 0.6000000000000001,
+        "formula_success": 0.6
+      },
+      "0.8": {
+        "actual_success": 0.4800000000000001,
+        "formula_success": 0.4800000000000001
+      },
+      "0.3333333333333333": {
+        "actual_success": 0.2,
+        "formula_success": 0.2
+      }
+    }
+  },
+  "coherent_curve": {
+    "largest_cutoff": 18,
+    "limit": 1.0406518522564083,
+    "last_cutoff_error": 4.5803606574246203e-07
+  }
+}
