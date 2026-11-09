@@ -4,30 +4,30 @@ Can one thermodynamic engine extract the full free-energy work rate from every u
 
 This repository constructs such an engine for an i.i.d. source with a known discrete Hamiltonian and a finite Gibbs partition function. For every fixed source state with finite relative entropy to equilibrium, one source-independent sequence of exact thermal operations attains
 
-$$
+```math
 \frac{X_n}{n}\longrightarrow
 f(\rho)=\frac{D(\rho\Vert\tau)}{\beta}
 \qquad\text{in mean absolute deviation}.
-$$
+```
 
-Here $X_n$ is the energy gained by one fixed oscillator battery, initially in its ground state; $n$ counts every supplied specimen, including training specimens. In the harmonic-oscillator case, the theorem covers **every finite-mean-energy state**, including coherent superpositions and slowly decaying population tails. The convergence is for each fixed source; it has no common sample-size guarantee over the whole class.
+Here $`X_n`$ is the energy gained by one fixed oscillator battery, initially in its ground state; $`n`$ counts every supplied specimen, including training specimens. In the harmonic-oscillator case, the theorem covers **every finite-mean-energy state**, including coherent superpositions and slowly decaying population tails. The convergence is for each fixed source; it has no common sample-size guarantee over the whole class.
 
 ## The mechanism
 
 The main step is a finite thermal replacement channel. It keeps the low-energy block, including its coherence, and replaces the discarded population by a finite Gibbs state:
 
-$$
+```math
 \Phi_K(\rho)
 =\Pi_K\rho\Pi_K
-+\operatorname{Tr}[(I-\Pi_K)\rho]\,\tau_K.
-$$
++\mathrm{Tr}[(I-\Pi_K)\rho]\,\tau_K.
+```
 
 A conditional swap with a Gibbs ancilla implements this channel exactly. It never rejects a specimen, and
 
-$$
+```math
 D\bigl(\Phi_K(\rho)\Vert\tau_K\bigr)
 \uparrow D(\rho\Vert\tau).
-$$
+```
 
 Uniform finite-dimensional extraction can therefore be combined with an arbitrarily slow, predetermined increase of the cutoff. A consumed training block controls the work target through projectors that commute with energy. The explicit finite extractor uses an exact position decoder and a finite charging bath, with every auxiliary register Gibbs initialized.
 
@@ -43,6 +43,12 @@ Uniform finite-dimensional extraction can therefore be combined with an arbitrar
 | Necessary pointwise qualification | Even a known mean-energy ceiling gives no uniform finite-sample guarantee over all states satisfying that ceiling. | [Oscillator examples, §4](science/oscillator.md#4-why-an-energy-bound-does-not-give-a-uniform-sample-guarantee) |
 
 The construction uses exact global energy conservation, finite Gibbs ancillas at each batch size, and a battery that always starts at zero energy. It requires no initially pure auxiliary memory, catalyst, external phase reference, or work loan. Bath dimension, bath energy, control complexity, and running time can grow very rapidly. The result establishes an asymptotic capability, with no efficiency claim.
+
+## Learn the framework
+
+The [learning route](learning/README.md) uses Matteo Lostaglio’s *An introductory review of the resource theory approach to thermodynamics*, **arXiv:1807.11549v2 (2019)**, as its single educational anchor. The [source-to-project bridge](learning/anchor_bridge.md) develops a complete energy-transfer example and connects thermal operations, collective coherence, and work storage to this construction.
+
+The [30-milestone map](learning/milestones.md) follows the project’s dependencies: fourteen background milestones build the finite-dimensional engine, and sixteen narrative milestones develop the cutoff, universal control, output guarantees, and their limits. The map describes common understanding targets; the proof route below remains the authoritative scientific account.
 
 ## Read the science
 

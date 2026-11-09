@@ -5,6 +5,8 @@ One source-independent sequence of exact thermal operations attains the full rel
 ## Reader routes
 
 - Overview and physical question: README.md, science/README.md.
+- Selected educational anchor, its exact version and source-to-project bridge: learning/README.md, learning/anchor_bridge.md.
+- Project-defined understanding targets and dependencies: learning/milestones.md, exactly M01–M30, with M01–M14 background/preliminaries and M15–M30 narrative/innovation.
 - Exact assumptions, quantifiers, and battery conventions: science/model_theorem.md.
 - The thermal replacement channel and its relative-entropy limit: science/thermal_cutoff.md.
 - The uniform finite-dimensional extractor and explicit Gibbs-only dilation: science/finite_extraction.md.
@@ -26,3 +28,7 @@ The finite-dimensional ingredient is uniform in the source at fixed dimension an
 The processor counts all training specimens, starts a single fixed oscillator battery at its ground level, and uses only Gibbs-initialized auxiliary systems. It supplies no catalyst, free pure memory, phase reference, or work loan. Bath size, energy, control complexity, and running time are unrestricted and can grow rapidly.
 
 Keep the public account scientific. Each theorem and proof has an authoritative topic page; navigation and summaries should preserve its assumptions and limiting order.
+
+## Learning-source convention
+
+Lostaglio, An introductory review of the resource theory approach to thermodynamics, arXiv:1807.11549v2 (7 October 2019), is the single educational anchor. Its PDF section lettering is used throughout the learning route. Primary research references remain separate proof and attribution sources. The common milestone map is independent of any reader’s assessment or progress.
